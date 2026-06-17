@@ -1,7 +1,7 @@
 {
   "name": "anti-scrapper",
   "version": "0.1.0",
-  "description": "Primitives React anti-scraping polymorphes pour protéger le contenu DOM contre les scrapeurs et les LLM. Accessibility-safe, SEO-friendly, SSR-ready.",
+  "description": "Polymorphic React anti-scraping primitives. Protect DOM content from scrapers and LLMs without breaking accessibility or SEO. SSR-ready.",
   "type": "module",
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
@@ -16,6 +16,7 @@
   "files": [
     "dist",
     "README.md",
+    "README.fr.md",
     "LICENSE",
     "CHANGELOG.md"
   ],
