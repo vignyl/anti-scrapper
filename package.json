@@ -1,0 +1,78 @@
+{
+  "name": "anti-scrapper",
+  "version": "0.1.0",
+  "description": "Primitives React anti-scraping polymorphes pour protéger le contenu DOM contre les scrapeurs et les LLM. Accessibility-safe, SEO-friendly, SSR-ready.",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run typecheck && npm run test && npm run build"
+  },
+  "keywords": [
+    "react",
+    "anti-scraping",
+    "anti-scrape",
+    "anti-bot",
+    "obfuscation",
+    "honeypot",
+    "polymorphic",
+    "dom-obfuscation",
+    "scraping-protection",
+    "llm-protection",
+    "anti-llm",
+    "accessibility"
+  ],
+  "author": "MTVSinclaire <26774609+vignyl@users.noreply.github.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vignyl/anti-scrapper.git"
+  },
+  "bugs": {
+    "url": "https://github.com/vignyl/anti-scrapper/issues"
+  },
+  "homepage": "https://github.com/vignyl/anti-scrapper#readme",
+  "peerDependencies": {
+    "react": ">=18.0.0",
+    "react-dom": ">=18.0.0"
+  },
+  "devDependencies": {
+    "@testing-library/dom": "^10.4.1",
+    "@testing-library/react": "^16.0.0",
+    "@types/node": "^22.0.0",
+    "@types/react": "^18.3.0",
+    "@types/react-dom": "^18.3.0",
+    "happy-dom": "^15.0.0",
+    "react": "^18.3.0",
+    "react-dom": "^18.3.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.5.0",
+    "vitest": "^2.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
